@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import React from 'react';
+import Timer from './components/Timer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,10 +15,13 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-        </p>
+          <p>
+              <div>
+                  <Timer/>
+              </div>
+          </p>
       </div>
-      <p className="read-the-docs">
+        <p className="read-the-docs">
       </p>
     </>
   )
